@@ -1,0 +1,44 @@
+//En este programa, el usuario tendrá que responder a lo que el programa le pida, en este caso, a números para poder ejecutar el programa de manera correcta.Siendo así que al tener las diferentes medidas, el programa arrojará el área de la base del triángulo y el volumen del prisma.
+
+package volumen;
+import java.util.Scanner;
+
+public class Volumen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//genero la entrada
+		Scanner entrada = new Scanner(System.in);
+		
+		//defino las clases que usaré
+		double areatri,base,altura,altprisma,volumen;
+		Scanner teclado;
+		
+		//Inicio del código para ejecutar el cálculo del área y volumen de un prisma triangular
+		System.out.println("Programa para calcular el área y volumen de un prisma triangular");
+		
+		teclado = new Scanner(System.in);
+		
+		System.out.println("Introduce la longitud de la base del triángulo: ");
+		base = entrada.nextDouble();
+		
+		System.out.println("Introduce la altura del triángulo: ");
+		altura = entrada.nextDouble();
+		
+		System.out.println("Introduce la altura del prisma: ");
+		altprisma = entrada.nextDouble();
+		//fin del código
+		
+		//proceso
+		areatri = (base * altura) / 2;
+		volumen = areatri * altprisma; 
+		//proceso fin
+		
+		//salida de mi programa
+		System.out.println("El área del triángulo es: " + areatri+" cm²");
+		System.out.println("El volumen del prisma es: " + volumen+" cm³");
+		//fin de la salida
+	}
+
+}
